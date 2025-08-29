@@ -18,6 +18,7 @@
     :root{
         --brand:#0d6efd;
     }
+    
     body{ background:#f5f7fb; }
     .navbar-brand{ font-weight:700; letter-spacing:.3px; }
     .card-stat{ border:none; border-radius:1rem; box-shadow:0 6px 18px rgba(0,0,0,.06); }
@@ -25,6 +26,7 @@
         width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
         background: rgba(13,110,253,.1);
     }
+    
     .quick-link{ transition:transform .15s ease, box-shadow .15s ease; }
     .quick-link:hover{ transform:translateY(-2px); box-shadow:0 8px 20px rgba(0,0,0,.08); }
     .table thead th{ background:#f0f3f9; }
