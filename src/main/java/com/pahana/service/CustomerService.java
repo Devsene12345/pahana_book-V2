@@ -4,6 +4,7 @@ package com.pahana.service;
 import java.sql.Connection;
 import java.util.List;
 
+
 import com.pahana.DAO.CustomerDAO;
 import com.pahana.model.Customer;
 
@@ -33,4 +34,6 @@ public class CustomerService {
     public void deleteCustomer(int id) throws Exception {
         dao.deleteCustomer(id);
     }
+    
+  
 }
