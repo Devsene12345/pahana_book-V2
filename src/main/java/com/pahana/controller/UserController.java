@@ -54,7 +54,7 @@ public class UserController extends HttpServlet {
 
             if (user != null) {
                 HttpSession session = request.getSession();
-                session.setAttribute("username", user.getUsername());
+                session.setAttribute("username", "Login Success!");
                 response.sendRedirect("Stroe.jsp");
             } else {
                 request.setAttribute("error", "Invalid username or password.");
