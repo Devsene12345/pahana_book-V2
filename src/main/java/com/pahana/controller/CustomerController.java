@@ -83,7 +83,7 @@ public class CustomerController extends HttpServlet {
 	                c.setPhone(request.getParameter("phone"));
 	                c.setPassword(request.getParameter("password"));
 	                service.addCustomer(c);
-	                response.sendRedirect("customer?action=list");
+	                response.sendRedirect("list-customers.jsp");
 	                return;
 
 	            } else if ("update".equals(action)) {
@@ -96,14 +96,14 @@ public class CustomerController extends HttpServlet {
 	                c.setPhone(request.getParameter("phone"));
 	                c.setPassword(request.getParameter("password"));
 	                service.updateCustomer(c);
-	                response.sendRedirect("customer?action=list");
+	                response.sendRedirect("list-customers.jsp");
 	                return;
 	            }
 	            
-	         // ✅ Redirect to login or success page after registration
-	            response.sendRedirect("UserLogin.jsp");
+	         // ✅ Redirect to all customer details must add to the list-customers.jsp
+	            response.sendRedirect("list-customers.jsp");
 	            
-	         // ✅ Redirect to registration success
+	         
 	            
 	            
 	            

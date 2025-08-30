@@ -68,7 +68,7 @@ public class ProductController extends HttpServlet {
                 p.setPrice(Double.parseDouble(request.getParameter("price")));
                 p.setStock(Integer.parseInt(request.getParameter("stock")));
                 service.addProduct(p);
-                response.sendRedirect("product?action=list");
+                response.sendRedirect("ListProducts.jsp");
                 return;
             }
 
@@ -80,7 +80,7 @@ public class ProductController extends HttpServlet {
                 p.setPrice(Double.parseDouble(request.getParameter("price")));
                 p.setStock(Integer.parseInt(request.getParameter("stock")));
                 service.updateProduct(p);
-                response.sendRedirect("product?action=list");
+                response.sendRedirect("ListProducts.jsp");
                 return;
             }
 
