@@ -55,7 +55,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark brand-nav">
     <div class="container">
-        <a class="navbar-brand" href="home.jsp">Pahana Edu</a>
+        <a class="navbar-brand" href="adminDashBoard.jsp">Pahana Edu</a>
         <div class="ms-auto d-flex gap-2">
             <a class="btn btn-light btn-sm" href="adminDashBoard.jsp">Home</a>
             <a class="btn btn-outline-light btn-sm" href="CustomerRegister.jsp">Add New Customer</a>
@@ -96,7 +96,7 @@
             </table>
         </div>
     <% } else { %>
-        <div class="alert alert-info">No customers found.</div>
+        <div class="alert alert-info">Success.</div>
     <% } %>
 </div>
 
