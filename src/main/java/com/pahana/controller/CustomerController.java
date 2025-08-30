@@ -102,6 +102,11 @@ public class CustomerController extends HttpServlet {
 	            
 	         // ✅ Redirect to login or success page after registration
 	            response.sendRedirect("UserLogin.jsp");
+	            
+	         // ✅ Redirect to registration success
+	            
+	            
+	            
 
 	        } catch (Exception e) {
 	            throw new ServletException(e);

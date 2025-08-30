@@ -43,7 +43,7 @@ public class ProductController extends HttpServlet {
             if ("delete".equals(action)) {
                 int productId = Integer.parseInt(request.getParameter("product_id"));
                 service.deleteProduct(productId);
-                response.sendRedirect("product?action=list");
+                response.sendRedirect("ListProducts.jsp");
                 return;
             }
 
