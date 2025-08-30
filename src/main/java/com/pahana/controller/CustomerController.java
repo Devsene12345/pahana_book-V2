@@ -99,6 +99,9 @@ public class CustomerController extends HttpServlet {
 	                response.sendRedirect("customer?action=list");
 	                return;
 	            }
+	            
+	         // ✅ Redirect to login or success page after registration
+	            response.sendRedirect("UserLogin.jsp");
 
 	        } catch (Exception e) {
 	            throw new ServletException(e);
